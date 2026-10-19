@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>경주 맛집 수첩</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,6 +40,8 @@
   --warn: #FF8A80; --warn-soft: #3B1F1D; --tab-bg: #2A2521; color-scheme: dark;
 }
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
+img { max-width: 100%; }
 body {
   background: var(--bg); color: var(--ink);
   font-family: var(--font-body); font-size: 18px; line-height: 1.55;
@@ -115,6 +123,8 @@ body {
 .foot { margin-top: 32px; font-size: 15px; color: var(--muted); }
 @media (prefers-reduced-motion: no-preference) { .tab { transition: background .15s, color .15s; } }
 </style>
+</head>
+<body>
 
 <div class="wrap">
   <header class="top">
@@ -558,3 +568,6 @@ body {
   if (start === 'cafe' || start === 'meal') show(start, false);
 })();
 </script>
+
+</body>
+</html>
